@@ -7,58 +7,65 @@
 </head>
 <body>
 
-<h1>Form Pemesanan Open Trip</h1>
+<header>
+    <h1>Form Pemesanan Open Trip</h1>
+</header>
 
-<a href="PemesananOpenTrip.html">Dashboard</a> |
-<a href="form.html">Pesan Trip</a> |
-<a href="hal2.html">Daftar Pemesanan</a>
+<nav>
+    <a href="PemesananOpenTrip.html">Dashboard</a> |
+    <a href="form.html">Pesan Trip</a> |
+    <a href="hal2.html">Daftar Pemesanan</a>
+</nav>
 
 <hr>
+
+<main>
 
 <form>
 
 <p>Nama Pemesan</p>
 <input type="text">
 
-<p>Nomor Telepon</p>
+<p>Kode Pemesanan</p>
 <input type="text">
-
-<p>Email</p>
-<input type="email">
 
 <p>Tujuan Trip</p>
 <select>
 <option>Banyuwangi</option>
 <option>Bali</option>
+<option>Bromo</option>
 </select>
-
-<p>Tanggal Keberangkatan</p>
-<input type="date">
 
 <p>Jumlah Peserta</p>
 <input type="number">
 
-<p>Paket Trip</p>
-<select>
-<option>Open Trip Reguler</option>
-<option>Private Trip</option>
-</select>
+<p>Tanggal Keberangkatan</p>
+<input type="date">
 
-<p>Upload Bukti Pembayaran</p>
+<p>Harga Trip</p>
+<input type="number">
+
+<p>Upload Foto Identitas</p>
 <input type="file">
 
-<p>Catatan Tambahan</p>
+<p>Keterangan</p>
 <textarea></textarea>
 
 <br><br>
-
-<button type="submit">Pesan Sekarang</button>
+<button type="submit">Simpan</button>
 
 </form>
 
-<br>
+</main>
 
-<a href="hal2.html">Lihat Daftar Pemesanan</a>
+<aside>
+<h3>Info Trip</h3>
+<p>Pilih tujuan wisata yang tersedia.</p>
+</aside>
+
+<footer>
+<p>Sistem Pemesanan Open Trip</p>
+</footer>
 
 </body>
 </html>
