@@ -1,78 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Pemesanan</title>
-    <link rel="icon" type="image/png" href="image.png">
+    <link rel="icon" href="image.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Daftar Pemesanan Open Trip</h1>
+    <header class="header">
+        <h1>Daftar Pemesanan</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Dashboard</a> |
-        <a href="form.html">Pesan Trip</a> |
-        <a href="hal2.html">Daftar Pemesanan</a>
+    <nav class="navbar">
+        <a href="index.html">Dashboard</a>
+        <a href="form.html">Pesan</a>
+        <a href="hal2.html">Daftar</a>
     </nav>
 
-    <hr>
+    <main class="main-container">
 
-    <main>
+        <div class="content">
 
-        <section>
-            <h2>Data Pemesanan</h2>
+            <section>
+                <h2>Data Pemesanan</h2>
 
-            <article>
-                <h3>Pemesanan 1</h3>
-                <p>Nama: Dafa</p>
-                <p>Tujuan: Banyuwangi</p>
-                <p>Tanggal: 10 Juni 2026</p>
-                <p>Jumlah Peserta: 2</p>
-            </article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Tujuan</th>
+                            <th>Tanggal</th>
+                            <th>Jumlah Peserta</th>
+                        </tr>
+                    </thead>
 
-            <article>
-                <h3>Pemesanan 2</h3>
-                <p>Nama: Rani</p>
-                <p>Tujuan: Bali</p>
-                <p>Tanggal: 12 Juni 2026</p>
-                <p>Jumlah Peserta: 3</p>
-            </article>
+                    <tbody>
+                        <tr>
+                            <td>Dafa</td>
+                            <td>Banyuwangi</td>
+                            <td>10 mei</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Rani</td>
+                            <td>Bali</td>
+                            <td>12 Juni</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Zainal</td>
+                            <td>Bali</td>
+                            <td>05 Juli</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <article>
-                <h3>Pemesanan 3</h3>
-                <p>Nama: Rizky</p>
-                <p>Tujuan: Bali</p>
-                <p>Tanggal: 15 Juni 2026</p>
-                <p>Jumlah Peserta: 4</p>
-            </article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jumlah Keseluruhan</th>
+                            <th>9</th>
+                        </tr>
+                    </thead>    
+                </table>
 
-            <article>
-                <h3>Pemesanan 4</h3>
-                <p>Nama: Sinta</p>
-                <p>Tujuan: Bali</p>
-                <p>Tanggal: 18 Juni 2026</p>
-                <p>Jumlah Peserta: 2</p>
-            </article>
+            </section>
 
-            <article>
-                <h3>Pemesanan 5</h3>
-                <p>Nama: Andi</p>
-                <p>Tujuan: Banyuwangi</p>
-                <p>Tanggal: 20 Juni 2026</p>
-                <p>Jumlah Peserta: 5</p>
-            </article>
+        </div>
 
-        </section>
+        <aside class="sidebar">
+            <h3>Filter</h3>
+
+            <label class="checkbox"><input type="checkbox"> Bali</label>
+            <label class="checkbox"><input type="checkbox"> Banyuwangi</label>
+
+            <h3>Whatshaap</h3>
+            <p>082340188130</p>
+
+            <h3>Instagram</h3>
+            <p>@Waaa.ril</p>
+
+            <h3>TikTok</h3>
+            <p>@Gemini05</p>
+        </aside>
 
     </main>
 
-    <footer>
-        <p>© 2026 Sistem Pemesanan Open Trip</p>
+    <footer class="footer">
+        <div>
+            <h4>© 2026 Open Trip</h4>
+        </div>
+        <div>
+            <h4>Daftar Pemesanan</h4>
+        </div>
+        <div>
+            <h4>by NAJWA</h4>
+        </div>
     </footer>
 
 </body>
+
 </html>

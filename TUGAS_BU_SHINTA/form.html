@@ -1,73 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pemesanan Trip</title>
-    <link rel="icon" type="image/png" href="image.png">
+    <title>Form Pemesanan</title>
+    <link rel="icon" href="image.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Form Pemesanan Open Trip</h1>
+    <header class="header">
+        <h1>Form Pemesanan</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Dashboard</a> |
-        <a href="form.html">Pesan Trip</a> |
-        <a href="hal2.html">Daftar Pemesanan</a>
+    <nav class="navbar">
+        <a href="index.html">Dashboard</a>
+        <a href="form.html">Pesan</a>
+        <a href="hal2.html">Daftar</a>
     </nav>
 
-    <hr>
+    <main class="main-container">
 
-    <main>
+        <div class="content">
 
-        <section>
-            <h3>Info Trip</h3>
-            <p>Pilih tujuan wisata yang tersedia.</p>
-        </section>
+            <section>
+                <form>
 
-        <form>
+                    <p>Nama</p>
+                    <input type="text" class="form-input">
 
-            <p>Nama Pemesan</p>
-            <input type="text">
+                    <p>Tujuan Daerah</p>
+                    <select class="form-input">
+                        <option>Bali</option>
+                        <option>Banyuwangi</option>
+                    </select>
 
-            <p>Kode Pemesanan</p>
-            <input type="text">
+                    <p>Tujuan wisata</p>
+                    <select class="form-input">
+                        <option>Djawatan</option>
+                        <option>Kawah Ijen</option>
+                        <option>Pantai Boom</option>
+                        <option>Baluran</option>
+                        <option>Nuanu</option>
+                        <option>Bedugul</option>
+                        <option>Tanal Lot</option>
+                        <option>Pantai Pandawa</option>
+                        <option>Pantai Kuta</option>
+                        <option>Beach Club</option>
+                    </select>
 
-            <p>Tujuan Trip</p>
-            <select>
-                <option>Banyuwangi</option>
-                <option>Bali</option>
-            </select>
+                    <p>Jumlah Peserta</p>
+                    <input type="number" class="form-input">
 
-            <p>Jumlah Peserta</p>
-            <input type="number">
+                    <p>Tanggal Keberangkatan</p>
+                    <input type="date" class="form-input">
 
-            <p>Tanggal Keberangkatan</p>
-            <input type="date">
+                    <p>Nomor Telepon</p>
+                    <input type="text" class="form-input">
 
-            <p>Harga Trip</p>
-            <input type="number">
+                    <p>Upload Foto Identitas</p>
+                    <input type="file">
 
-            <p>Upload Foto Identitas</p>
-            <input type="file">
+                    <br><br>
 
-            <p>Keterangan</p>
-            <textarea></textarea>
+                    <button class="btn">Simpan</button>
 
-            <br><br>
+                </form>
+            </section>
 
-            <button type="submit">Simpan</button>
+        </div>
 
-        </form>
+        <aside class="sidebar">
+            <h3>Filter</h3>
+
+            <label class="checkbox"><input type="checkbox"> Bali</label>
+            <label class="checkbox"><input type="checkbox"> Banyuwangi</label>
+
+            <h3>Whatshaap</h3>
+            <p>082340188130</p>
+
+            <h3>Instagram</h3>
+            <p>@Waaa.ril</p>
+
+            <h3>TikTok</h3>
+            <p>@Gemini05</p>
+        </aside>
 
     </main>
 
-    <footer>
-        <p>© 2026 Sistem Pemesanan Open Trip</p>
+    <footer class="footer">
+        <div>
+            <h4>© 2026 Open Trip</h4>
+        </div>
+        <div>
+            <h4>Menu Pesanan</h4>
+        </div>
+        <div>
+            <h4>by NAJWA</h4>
+        </div>
     </footer>
 
 </body>
+
 </html>

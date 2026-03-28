@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Pemesanan Open Trip</title>
-    <link rel="icon" type="image/png" href="image.png">
+    <link rel="icon" href="image.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="image.png" width="80">
-        <h1>Sistem Pemesanan Open Trip</h1>
+    <header class="header">
+        <img src="image.png" class="logo">
+        <h1>NajaTrip</h1>
+        <p>Pemesanan open trip BANYUWANGI-BALI</p>
     </header>
 
-    <nav>
-        <a href="index.html">Dashboard</a> |
-        <a href="form.html">Pesan Trip</a> |
-        <a href="hal2.html">Daftar Pemesanan</a>
+    <nav class="navbar">
+        <div>OpenTrip</div>
+        <div>
+            <a href="index.html">Dashboard</a>
+            <a href="form.html">Pesan Trip</a>
+            <a href="hal2.html">Daftar</a>
+        </div>
     </nav>
 
-    <hr>
+    <main class="main-container">
 
-    <main>
-        <h2>Selamat Datang di Sistem Pemesanan Open Trip</h2>
-        <p>Sistem ini digunakan untuk melakukan pemesanan open trip dengan pilihan tujuan wisata.</p>
+        <div class="content">
 
-        <section>
-            <h3>Tujuan Trip</h3>
-            <ul>
-                <li>Banyuwangi</li>
-                <li>Bali</li>
-            </ul>
-        </section>
-        
-        <aside>
-            <h3>Statistik</h3>
-            <p>Total Pemesanan: 5</p>
-            <p>Tujuan Bali: 3</p>
-            <p>Tujuan Banyuwangi: 2</p>
+            <section class="hero">
+                <div class="hero-overlay">
+                    <h2>Selamat Datang</h2>
+                    <p>Open Trip Wisata - Solusi Mudah untuk Menjelajahi Pesona Dua Dunia</p>
+                    <P>Nikmati perjalanan Open Trip yang terorganisir, aman, dan penuh keseruan.</P>
+                    <P>Kami siap mengantar kamu mengejar Blue Fire di Banyuwangi hingga sunset syahdu di pesisir Bali
+                        tanpa perlu pusing mikirin rute.</P>
+                </div>
+            </section>
+
+            <section>
+                <h3>Cari Trip</h3>
+                <input type="text" class="form-input" placeholder="Cari tujuan...">
+                <button class="btn">Cari</button>
+            </section>
+
+            <section>
+                <h3>WISATA</h3>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=400,height=265,dpr=2/tour_img/c386cfc673b6988b0604af96548f0b4b4e7fbae50ff7a9bf2b58d9b420e36aaa.jpg"
+                                alt="Foto Produk" width="100%">
+                        </div>
+                        <h4>Kawah Ijen</h4>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="https://www.gresiksatu.com/wp-content/uploads/2024/05/pantai-boom-banyuwangi-02.jpg"
+                                alt="Foto Produk" width="100%">
+                        </div>
+                        <h4>Pantai Boom</h4>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="https://www.rentalmobilbali.net/wp-content/uploads/2022/09/feature-image-pura-ulun-danu-beratan-bedugul.webp"
+                                alt="Foto Produk" width="100%">
+                        </div>
+                        <h4>Bedugul</h4>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="https://cdn-jpr.jawapos.com/images/22/2024/08/12/FotoJet-2024-08-12T123449780-642017321.jpg"
+                                alt="Foto Produk" width="100%">
+                        </div>
+                        <h4>Pantai Pandawa</h4>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <aside class="sidebar">
+            <h3>Filter</h3>
+
+            <label class="checkbox"><input type="checkbox"> Bali</label>
+            <label class="checkbox"><input type="checkbox"> Banyuwangi</label>
+
+            <h3>Whatshaap</h3>
+            <p>082340188130</p>
+
+            <h3>Instagram</h3>
+            <p>@Waaa.ril</p>
+
+            <h3>TikTok</h3>
+            <p>@Gemini05</p>
         </aside>
 
     </main>
 
-    <footer>
-        <p>© 2026 Sistem Pemesanan Open Trip</p>
+    <footer class="footer">
+        <div>
+            <h4>© 2026 Open Trip</h4>
+        </div>
+        <div>
+            <h4>Menu Utama</h4>
+        </div>
+        <div>
+            <h4>by NAJWA</h4>
+        </div>
     </footer>
 
 </body>
+
 </html>

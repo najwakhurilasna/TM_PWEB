@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1B3A6B;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    margin-top: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 60px;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.content {
+    flex: 3;
+    padding: 10px;
+}
+
+/* SPACING */
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    padding: 60px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.hero-overlay {
+    animation: fadeIn 1s ease;
+}
+
+/* CARD GRID */
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center; /* INI BIAR TULISAN TENGAH */
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 { margin-top: 10px; }
+
+/* FORM */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-input:focus {
+    border-color: #1B3A6B;
+    outline: none;
+    box-shadow: 0 0 5px rgba(27, 58, 107, 0.3);
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px;
+    background: #1B3A6B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16325c;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 180px; /* biar semua gambar sama tinggi */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* biar ga gepeng / lonjong */
+    transition: transform 0.4s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.checkbox input {
+    margin-right: 5px;
+    accent-color: #1B3A6B;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #1B3A6B;
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(min-width:768px) {
+    .main-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .sidebar {
+        margin-top: 0;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:1024px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
