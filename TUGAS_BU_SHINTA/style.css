@@ -5,7 +5,6 @@
     font-family: Arial;
 }
 
-/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -23,7 +22,6 @@
     text-decoration: none;
 }
 
-/* HEADER */
 .header {
     margin-top: 60px;
     text-align: center;
@@ -34,7 +32,6 @@
     width: 60px;
 }
 
-/* MAIN LAYOUT */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -46,20 +43,18 @@
     padding: 10px;
 }
 
-/* SPACING */
 section {
     margin-bottom: 20px;
 }
 
 h3 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 p {
     margin-bottom: 5px;
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(to right, #74ebd5, #ACB6E5);
     padding: 60px;
@@ -72,7 +67,6 @@ p {
     animation: fadeIn 1s ease;
 }
 
-/* CARD GRID */
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -101,7 +95,6 @@ p {
 
 .card h4 { margin-top: 10px; }
 
-/* FORM */
 .form-input {
     width: 100%;
     padding: 8px;
@@ -116,18 +109,25 @@ p {
     box-shadow: 0 0 5px rgba(27, 58, 107, 0.3);
 }
 
-/* BUTTON */
 .btn {
-    padding: 10px;
-    background: #1B3A6B;
+    padding: 6px 14px;       /* lebih kecil */
+    font-size: 14px;         /* biar proporsional */
+    background: linear-gradient(135deg, #1B3A6B, #3A6EA5);
     color: white;
     border: none;
+    border-radius: 20px;     /* tetap rounded */
     cursor: pointer;
+    font-weight: 500;        /* jangan terlalu bold */
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #16325c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: scale(0.97);
 }
 
 .img-wrapper {
@@ -148,7 +148,6 @@ p {
     transform: scale(1.05);
 }
 
-/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -166,7 +165,6 @@ tr:nth-child(even) {
     background: #f2f2f2;
 }
 
-/* SIDEBAR */
 .sidebar {
     background: #f4f4f4;
     padding: 15px;
@@ -174,7 +172,6 @@ tr:nth-child(even) {
     border-radius: 10px;
 }
 
-/* CHECKBOX */
 .checkbox {
     display: block;
     margin: 5px 0;
@@ -186,17 +183,106 @@ tr:nth-child(even) {
     accent-color: #1B3A6B;
 }
 
-/* FOOTER */
 .footer {
-    display: flex;
-    flex-direction: column;
-    background: #1B3A6B;
-    color: white;
-    padding: 10px;
-    gap: 10px;
+    margin-top: 50px;
 }
 
-/* ANIMASI */
+.footer-top {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-box i {
+    margin-right: 8px;
+    color: #1abc9c;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 8px;
+    font-size: 18px;
+    background: #34495e;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #1abc9c;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-brand h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(45deg, #1abc9c, #74ebd5);
+
+    background-clip: text;              
+    -webkit-background-clip: text;
+
+    color: transparent;                 
+}
+
+.about-btn {
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+@media(min-width:768px) {
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 30%;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -209,7 +295,6 @@ tr:nth-child(even) {
     }
 }
 
-/* RESPONSIVE */
 @media(min-width:768px) {
     .main-container {
         flex-direction: row;

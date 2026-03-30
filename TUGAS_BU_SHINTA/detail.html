@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pemesanan</title>
+    <title>Detail</title>
     <link rel="icon" href="image.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,7 +12,8 @@
 <body>
 
     <header class="header">
-        <h1>Form Pemesanan</h1>
+        <h1>NajaTrip</h1>
+        <p>Informasi Rute & Paket Trip</p>
     </header>
 
     <nav class="navbar">
@@ -27,56 +27,65 @@
 
         <div class="content">
 
+            <!-- RUTE -->
             <section>
-                <form>
+                <h2>Rute Perjalanan</h2>
+                <p>
+                    NajaTrip menyediakan perjalanan wisata dari Banyuwangi menuju Bali 
+                    dengan rute yang sudah terorganisir dengan baik.
+                </p>
 
-                    <p>Nama</p>
-                    <input type="text" class="form-input">
+                <ul>
+                    <li>Start: Banyuwangi</li>
+                    <li>Kawah Ijen / Djawatan</li>
+                    <li>Penyeberangan ke Bali</li>
+                    <li>Bedugul / Tanah Lot</li>
+                    <li>Pantai Pandawa / Kuta</li>
+                    <li>Finish</li>
+                </ul>
+            </section>
 
-                    <p>Tujuan Daerah</p>
-                    <select class="form-input">
-                        <option>Bali</option>
-                        <option>Banyuwangi</option>
-                    </select>
+            <!-- DAFTAR TRIP -->
+            <section>
+                <h2>Paket Trip Tersedia</h2>
 
-                    <p>Tujuan wisata</p>
-                    <select class="form-input">
-                        <option>Djawatan</option>
-                        <option>Kawah Ijen</option>
-                        <option>Pantai Boom</option>
-                        <option>Baluran</option>
-                        <option>Nuanu</option>
-                        <option>Bedugul</option>
-                        <option>Tanal Lot</option>
-                        <option>Pantai Pandawa</option>
-                        <option>Pantai Kuta</option>
-                        <option>Beach Club</option>
-                    </select>
+                <div class="card-container">
 
-                    <p>Jumlah Peserta</p>
-                    <input type="number" class="form-input">
+                    <div class="card">
+                        <h4>Trip 1 Hari</h4>
+                        <p>Banyuwangi Only</p>
+                        <p>Rp 150.000</p>
+                    </div>
 
-                    <p>Tanggal Keberangkatan</p>
-                    <input type="date" class="form-input">
+                    <div class="card">
+                        <h4>Trip 2 Hari 1 Malam</h4>
+                        <p>Banyuwangi - Bali</p>
+                        <p>Rp 350.000</p>
+                    </div>
 
-                    <p>Nomor Telepon</p>
-                    <input type="text" class="form-input">
+                    <div class="card">
+                        <h4>Trip 3 Hari 2 Malam</h4>
+                        <p>Full Explore Bali</p>
+                        <p>Rp 600.000</p>
+                    </div>
 
-                    <p>Upload Foto Identitas</p>
-                    <input type="file">
-
-                    <br><br>
-
-                    <button class="btn">Simpan</button>
-
-                </form>
+                </div>
             </section>
 
         </div>
 
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3>Informasi</h3>
+            <p>Trip tersedia setiap minggu</p>
+
+            <h3>Kontak</h3>
+            <p>WA: 082340188130</p>
+        </aside>
+
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
         <div class="footer-top">
 
             <div class="footer-box">
@@ -112,5 +121,4 @@
     </footer>
 
 </body>
-
 </html>

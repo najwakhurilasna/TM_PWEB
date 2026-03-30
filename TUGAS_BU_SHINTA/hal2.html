@@ -6,6 +6,7 @@
     <title>Daftar Pemesanan</title>
     <link rel="icon" href="image.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,7 +16,8 @@
 
     <nav class="navbar">
         <a href="index.html">Dashboard</a>
-        <a href="form.html">Pesan</a>
+        <a href="detail.html">Detail</a>
+        <a href="form.html">Transaksi</a>
         <a href="hal2.html">Daftar</a>
     </nav>
 
@@ -74,30 +76,51 @@
         <aside class="sidebar">
             <h3>Filter</h3>
 
-            <label class="checkbox"><input type="checkbox"> Bali</label>
-            <label class="checkbox"><input type="checkbox"> Banyuwangi</label>
+            <label class="checkbox">
+                <input type="checkbox"> Bali
+            </label>
 
-            <h3>Whatshaap</h3>
-            <p>082340188130</p>
+            <label class="checkbox">
+                <input type="checkbox"> Banyuwangi
+            </label>
 
-            <h3>Instagram</h3>
-            <p>@Waaa.ril</p>
-
-            <h3>TikTok</h3>
-            <p>@Gemini05</p>
+            <button class="btn filter-btn">Terapkan Filter</button>
         </aside>
 
     </main>
 
     <footer class="footer">
-        <div>
-            <h4>© 2026 Open Trip</h4>
+        <div class="footer-top">
+
+            <div class="footer-box">
+                <h3>LOCATION</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Banyuwangi, Jawa Timur</p>
+                <p>Indonesia</p>
+            </div>
+
+            <!-- SOSMED -->
+            <div class="footer-box">
+                <h3>AROUND THE WEB</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+
+                <p>WhatsApp: 082340188130</p>
+                <p>Instagram: @Waaa.ril</p>
+                <p>TikTok: @Gemini05</p>
+            </div>
+
+            <div class="footer-box footer-brand">
+                <h1>NajaTrip</h1>
+                <button class="btn about-btn">About Us</button>
+            </div>
+
         </div>
-        <div>
-            <h4>Daftar Pemesanan</h4>
-        </div>
-        <div>
-            <h4>by NAJWA</h4>
+
+        <div class="footer-bottom">
+            <p>© 2026 NajaTrip</p>
         </div>
     </footer>
 
