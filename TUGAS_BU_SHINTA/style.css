@@ -86,7 +86,7 @@ p {
     transition: 0.3s;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-    text-align: center; /* INI BIAR TULISAN TENGAH */
+    text-align: center; 
 }
 
 .card p {
@@ -132,7 +132,7 @@ p {
 
 .img-wrapper {
     width: 100%;
-    height: 180px; /* biar semua gambar sama tinggi */
+    height: 180px; 
     overflow: hidden;
     border-radius: 8px;
 }
@@ -140,7 +140,7 @@ p {
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* biar ga gepeng / lonjong */
+    object-fit: cover; 
     transition: transform 0.4s ease;
 }
 
