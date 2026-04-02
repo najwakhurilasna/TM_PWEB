@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -32,42 +34,59 @@
                     <thead>
                         <tr>
                             <th>Nama</th>
+                            <th>Nomor Telepon</th>
                             <th>Tujuan</th>
+                            <th>Paket</th>
                             <th>Tanggal</th>
-                            <th>Jumlah Peserta</th>
+                            <th>Peserta</th>
+                            <th>KTP</th>
+                            <th>Bukti Transfer</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
                             <td>Dafa</td>
+                            <td>081234567890</td>
                             <td>Banyuwangi</td>
-                            <td>10 mei</td>
+                            <td>Ijen</td>
+                            <td>10 Mei</td>
                             <td>2</td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><span class="status success">Lunas</span></td>
                         </tr>
+
                         <tr>
                             <td>Rani</td>
+                            <td>081234567891</td>
                             <td>Bali</td>
+                            <td>3H2M</td>
                             <td>12 Juni</td>
                             <td>4</td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><span class="status pending">DP</span></td>
                         </tr>
+
                         <tr>
                             <td>Zainal</td>
+                            <td>081234567892</td>
                             <td>Bali</td>
+                            <td>5H4M</td>
                             <td>05 Juli</td>
                             <td>3</td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><a href="#" class="table-btn">Lihat</a></td>
+                            <td><span class="status cancel">Batal</span></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Jumlah Keseluruhan</th>
-                            <th>9</th>
-                        </tr>
-                    </thead>    
-                </table>
+                <div class="total-box">
+                    <p>Total Peserta: <b>9 orang</b></p>
+                </div>
 
             </section>
 
@@ -84,7 +103,7 @@
                 <input type="checkbox"> Banyuwangi
             </label>
 
-            <button class="btn filter-btn">Terapkan Filter</button>
+            <button class="btn filter-btn">Terapkan</button>
         </aside>
 
     </main>
