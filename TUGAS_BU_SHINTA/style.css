@@ -443,6 +443,19 @@ tr:nth-child(even) {
     color: transparent;                 
 }
 
+.img-preview {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.img-preview:hover {
+    transform: scale(1.5);
+}
+
 .about-btn {
     border-radius: 20px;
     padding: 8px 18px;

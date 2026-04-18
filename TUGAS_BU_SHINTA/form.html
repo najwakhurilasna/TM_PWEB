@@ -29,24 +29,25 @@
         <div class="content">
 
             <section>
-                <form class="form-box">
+                <!-- 🔥 TAMBAH ID DI SINI -->
+                <form class="form-box" id="formBooking">
 
                     <h2>📝 Booking Trip</h2>
 
                     <div class="form-group">
                         <label>Nama Lengkap</label>
-                        <input type="text" class="form-input" placeholder="Masukkan nama lengkap">
+                        <input type="text" id="nama" class="form-input" placeholder="Masukkan nama lengkap">
                     </div>
 
                     <div class="form-group">
                         <label>Nomor Telepon</label>
-                        <input type="text" class="form-input" placeholder="08xxxxxxxxxx">
+                        <input type="text" id="telp" class="form-input" placeholder="08xxxxxxxxxx">
                     </div>
 
                     <div class="form-group">
                         <label>Tujuan Daerah</label>
-                        <select class="form-input">
-                            <option>-- Pilih --</option>
+                        <select id="tujuan" class="form-input">
+                            <option value="">-- Pilih --</option>
                             <option>Banyuwangi</option>
                             <option>Bali</option>
                         </select>
@@ -54,8 +55,8 @@
 
                     <div class="form-group">
                         <label>Pilih Paket Trip</label>
-                        <select class="form-input">
-                            <option>-- Pilih Paket --</option>
+                        <select id="paket" class="form-input">
+                            <option value="">-- Pilih Paket --</option>
                             <option>Trip Ijen</option>
                             <option>Trip Ranti</option>
                             <option>Pulau Tabuhan</option>
@@ -68,34 +69,35 @@
 
                     <div class="form-group">
                         <label>Tanggal Keberangkatan</label>
-                        <input type="date" class="form-input">
+                        <input type="date" id="tanggal" class="form-input">
                     </div>
 
                     <div class="form-group">
                         <label>Jumlah Peserta</label>
-                        <input type="number" class="form-input" placeholder="Jumlah orang">
+                        <input type="number" id="peserta" class="form-input" placeholder="Jumlah orang">
                     </div>
 
                     <div class="form-group">
                         <label>Upload Identitas</label>
-                        <input type="file" class="form-input">
+                        <input type="file" id="ktp" class="form-input">
                     </div>
 
                     <div class="form-group">
                         <label>Upload Bukti Pembayaran</label>
-                        <input type="file" class="form-input">
+                        <input type="file" id="bukti" class="form-input">
                     </div>
 
                     <div class="form-group">
                         <label>Catatan Tambahan</label>
-                        <textarea class="form-input" rows="3" placeholder="Opsional..."></textarea>
+                        <textarea id="catatan" class="form-input" rows="3" placeholder="Opsional..."></textarea>
                     </div>
 
                     <p class="form-note">
                         *Pastikan data yang Anda isi sudah benar sebelum melakukan booking
                     </p>
 
-                    <button class="btn submit-btn">Booking Sekarang</button>
+                    <!-- 🔥 WAJIB type submit -->
+                    <button type="submit" class="btn submit-btn">Booking Sekarang</button>
 
                 </form>
             </section>
@@ -137,6 +139,8 @@
             <p>© 2026 NajaTrip</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

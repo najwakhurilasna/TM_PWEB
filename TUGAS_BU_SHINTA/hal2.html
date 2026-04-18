@@ -40,52 +40,19 @@
                             <th>Tanggal</th>
                             <th>Peserta</th>
                             <th>KTP</th>
-                            <th>Bukti Transfer</th>
+                            <th>Bukti</th>
                             <th>Status</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Dafa</td>
-                            <td>081234567890</td>
-                            <td>Banyuwangi</td>
-                            <td>Ijen</td>
-                            <td>10 Mei</td>
-                            <td>2</td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><span class="status success">Lunas</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>Rani</td>
-                            <td>081234567891</td>
-                            <td>Bali</td>
-                            <td>3H2M</td>
-                            <td>12 Juni</td>
-                            <td>4</td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><span class="status pending">DP</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>Zainal</td>
-                            <td>081234567892</td>
-                            <td>Bali</td>
-                            <td>5H4M</td>
-                            <td>05 Juli</td>
-                            <td>3</td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><a href="#" class="table-btn">Lihat</a></td>
-                            <td><span class="status cancel">Batal</span></td>
-                        </tr>
-                    </tbody>
+                    <!-- 🔥 INI PENTING -->
+                    <tbody id="dataTabel"></tbody>
                 </table>
 
+                <!-- 🔥 TOTAL OTOMATIS -->
                 <div class="total-box">
-                    <p>Total Peserta: <b>9 orang</b></p>
+                    <p id="totalPeserta">Total Peserta: 0 orang</p>
                 </div>
 
             </section>
@@ -142,6 +109,7 @@
         </div>
     </footer>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
