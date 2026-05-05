@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-#[Fillable(['name', 'email', 'password'])]
+#[Fillable(['name', 'email', 'password', 'role'])]  // 👈 TAMBAHKAN 'role' DI SINI!
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
 {
@@ -28,5 +28,27 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    // ==================== RELASI ====================
+
+    // Relasi ke Booking (one to many)
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+
+    // ==================== METHOD UNTUK ROLE ====================
+
+    // Cek apakah user adalah admin
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+
+    // Cek apakah user adalah customer
+    public function isCustomer()
+    {
+        return $this->role === 'customer';
     }
 }
