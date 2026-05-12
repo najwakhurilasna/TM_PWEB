@@ -30,25 +30,25 @@
             [
                 'nama' => 'Kawah Ijen',
                 'desc' => 'Blue fire fenomenal',
-                'img' => 'https://cdn.getyourguide.com/image/format=auto...',
+                'img' => 'https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=400,height=265,dpr=2/tour_img/c386cfc673b6988b0604af96548f0b4b4e7fbae50ff7a9bf2b58d9b420e36aaa.jpg',
                 'kategori' => 'banyuwangi'
             ],
             [
                 'nama' => 'Pantai Boom',
                 'desc' => 'Pesona sunset',
-                'img' => 'https://www.gresiksatu.com/...',
+                'img' => 'https://www.gresiksatu.com/wp-content/uploads/2024/05/pantai-boom-banyuwangi-02.jpg',
                 'kategori' => 'banyuwangi'
             ],
             [
                 'nama' => 'Bedugul',
                 'desc' => 'Danau Beratan',
-                'img' => 'https://www.rentalmobilbali.net/...',
+                'img' => 'https://www.rentalmobilbali.net/wp-content/uploads/2022/09/feature-image-pura-ulun-danu-beratan-bedugul.webp',
                 'kategori' => 'bali'
             ],
             [
                 'nama' => 'Pantai Pandawa',
                 'desc' => 'Pantai eksotis',
-                'img' => 'https://cdn-jpr.jawapos.com/...',
+                'img' => 'https://cdn-jpr.jawapos.com/images/22/2024/08/12/FotoJet-2024-08-12T123449780-642017321.jpg',
                 'kategori' => 'bali'
             ],
         ];

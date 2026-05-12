@@ -3,19 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Trip;
+use Illuminate\Support\Facades\Auth;
+
 
 class DashboardController extends Controller
 {
-    // Halaman dashboard
     public function index()
     {
-        return view('dashboard');
+        if (Auth::user()->role == 'admin') {
+            return view('admin.dashboard');
+        }
+        $trips = Trip::where('status','aktif')->get();
+        return view('dashboard', compact('trips'));  
     }
 
-    // Halaman detail
+    // Halaman detail trip (customer)
     public function detail()
     {
-        return view('detail');
+        $trips = Trip::where('status', 'aktif')->get();
+        return view('detail', compact('trips'));
     }
 
     // Halaman transaksi
@@ -24,16 +31,15 @@ class DashboardController extends Controller
         return view('transaksi');
     }
 
-    // Halaman daftar
+    // Halaman daftar pemesanan
     public function daftar()
     {
         return view('daftar');
     }
 
-    // Proses transaksi (simpan booking)
+    // Proses transaksi
     public function prosesTransaksi(Request $request)
     {
-        // Nanti diisi logika simpan ke database
         return redirect()->route('daftar')->with('success', 'Booking berhasil!');
     }
 }
